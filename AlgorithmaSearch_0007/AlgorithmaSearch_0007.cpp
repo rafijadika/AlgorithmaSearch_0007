@@ -15,3 +15,10 @@ void input() {
             cout << "\narray harus mempunyai minim 1 dan maksimum 20.\n\n";
         }
     }
+
+    cout << "\nmasukan elemen array:\n";
+    for (int i = 0; i < n; i++) {
+        cout << "<" << (i + 1) << "> ";
+        cin >> arr[i];
+    }
+}
