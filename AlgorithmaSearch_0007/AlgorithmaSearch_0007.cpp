@@ -30,3 +30,38 @@ void LinearSearch() {
         int item;
         cout << "\nmasukan element yang ingin kamu cari: ";
         cin >> item;
+
+        bool found = false;
+        for (int i = 0; i < n; i++) {
+            ctr++;
+            if (arr[i] == item) {
+                found = true;
+                cout << "\n" << item << " ditemukan pada posisi " << (i + 1) << endl;
+                break;
+            }
+        }
+
+        if (!found) {
+            cout << "\n" << item << " array tidak ditemukan\n";
+        }
+        cout << "\nJumlah perbandingan: " << ctr << endl;
+
+        cout << "\nlanjukan mencari (y/n): ";
+        cin >> ch;
+    } while (ch == 'y' || ch == 'Y');
+}
+
+void display() {
+    cout << "Array elements are: ";
+    for (int i = 0; i < n; i++) {
+        cout << arr[i] << " ";
+    }
+    cout << endl; 
+}
+
+int main() {
+    input();
+    LinearSearch();
+    display();
+    return 0;
+}
