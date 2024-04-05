@@ -56,12 +56,5 @@ void display() {
     for (int i = 0; i < n; i++) {
         cout << arr[i] << " ";
     }
-    cout << endl; 
-}
-
-int main() {  
-    input();
-    LinearSearch();
-    display();
-    return 0;
+    cout << endl;
 }
