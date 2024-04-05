@@ -50,18 +50,3 @@ void LinearSearch() {
         cin >> ch;
     } while (ch == 'y' || ch == 'Y');
 }
-
-void display() {
-    cout << "Array elements are: ";
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl; 
-}
-
-int main() {  
-    input();
-    LinearSearch();
-    display();
-    return 0;
-}
