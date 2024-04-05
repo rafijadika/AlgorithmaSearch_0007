@@ -22,3 +22,11 @@ void input() {
         cin >> arr[i];
     }
 }
+
+void LinearSearch() {
+    char ch;
+    do {
+        int ctr = 0; // Number of comparisons
+        int item;
+        cout << "\nmasukan element yang ingin kamu cari: ";
+        cin >> item;
